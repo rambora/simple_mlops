@@ -22,3 +22,7 @@ run "dvc repro" - runs the stages in the "dvc.yaml" file- this creates a "dvc.lo
 touch src/split_data.py
 run "dvc repro" - this creates a "dvc.lock" file
 touch src/train_and_evaluate.py
+dvc repro
+touch report
+dvc metrics show
+dvc metrics diff
