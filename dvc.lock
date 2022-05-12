@@ -4,8 +4,8 @@ stages:
     cmd: python src/load_data.py --config=params.yaml
     deps:
     - path: data_given/winequality.csv
-      md5: 2daeecee174368f8a33b82c8cccae3a5
-      size: 84199
+      md5: 694e458ef3817832460494c8571d9a6e
+      size: 84198
     - path: src/get_data.py
       md5: 970f3e01d27fe4102192d96f969e414e
       size: 631
@@ -14,21 +14,21 @@ stages:
       size: 653
     outs:
     - path: data/raw/winequality.csv
-      md5: 9f009075028c09600321e67050811e1b
-      size: 84221
+      md5: 30a29c5a058df7cee98f0edb7274b80f
+      size: 84220
   split_data:
     cmd: python src/split_data.py --config=params.yaml
     deps:
     - path: data/raw/winequality.csv
-      md5: 9f009075028c09600321e67050811e1b
-      size: 84221
+      md5: 30a29c5a058df7cee98f0edb7274b80f
+      size: 84220
     - path: src/split_data.py
       md5: 302a991540a0467c62a46fde50977384
       size: 1069
     outs:
     - path: data/processed/test_winequality.csv
-      md5: 34195b5a523622c531e51db5ca76bd7e
-      size: 16953
+      md5: 113fe57a8ff7d0f3420d8a32681d8230
+      size: 16952
     - path: data/processed/train_winequality.csv
-      md5: dc8e74412b623be51630d51920a2c15a
-      size: 67460
+      md5: 0440a2e26acae403d1f247a40ec063d0
+      size: 67459
