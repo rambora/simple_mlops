@@ -9,7 +9,6 @@ create template.py file
 python template.py
 git init
 dvc init
-```
 dvc add data_given/winequality.csv
 git add .
 git commit -m "first commit"
@@ -38,3 +37,4 @@ write test cases in tests
 run the pytest uisng tox: tox (it runs the tox.ini automatically)
 create setup.py
 # install the setup - pip install -e .
+```
