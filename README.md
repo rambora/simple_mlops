@@ -1,4 +1,4 @@
-create a new conda environment : conda create -n wineq python=3.7 -y
+create a new conda environment : conda create -n wineq python=3.7 -y \n
 activate the new environment : conda activate wineq
 create a 'requirements.txt' file
 pip install -r requirements.txt
@@ -26,3 +26,5 @@ dvc repro
 touch report
 dvc metrics show
 dvc metrics diff
+git add . && git commit -m "tracker added"
+git push origin main
