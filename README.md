@@ -18,4 +18,6 @@ touch src/get_data.py
 write the get_data.py
 touch src/load_data.py 
 write the load_data.py - writes 'winequality.csv' to "src/raw"
+run "dvc repro" - runs the stages in the "dvc.yaml" file- this creates a "dvc.lock" file
+touch src/split_data.py
 run "dvc repro" - this creates a "dvc.lock" file
