@@ -1,4 +1,7 @@
+```bash
 create a new conda environment : conda create -n wineq python=3.7 -y
+```
+```bash
 activate the new environment : conda activate wineq
 create a 'requirements.txt' file
 pip install -r requirements.txt
@@ -6,6 +9,7 @@ create template.py file
 python template.py
 git init
 dvc init
+```
 dvc add data_given/winequality.csv
 git add .
 git commit -m "first commit"
@@ -29,3 +33,8 @@ dvc metrics diff
 git add . && git commit -m "tracker added"
 git push origin main
 experiment: change parameters in params.yaml -> dvc repro -> dvc metrics diff
+touch tox.ini
+write test cases in tests
+run the pytest uisng tox: tox (it runs the tox.ini automatically)
+create setup.py
+# install the setup - pip install -e .
